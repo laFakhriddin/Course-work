@@ -15,7 +15,7 @@ public class design extends javax.swing.JFrame {
      */
     public design() {
         initComponents();
-        graph.setBounds(550, 80, 500, 380);
+        graph.setBounds(550, 65, 500, 380);
         add(graph);
     }
 
@@ -43,17 +43,18 @@ public class design extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         root = new javax.swing.JTextField();
-        insertParams = new javax.swing.JButton();
         calculate = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         cleaner = new javax.swing.JButton();
+        insertParams = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Course wok");
         setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Blue"));
-        setPreferredSize(new java.awt.Dimension(1100, 650));
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Введите функцию и другие параметры");
 
         panel.setBackground(new java.awt.Color(153, 153, 255));
@@ -101,13 +102,6 @@ public class design extends javax.swing.JFrame {
 
         root.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
 
-        insertParams.setText("Параметры");
-        insertParams.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                insertParamsActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
         panelLayout.setHorizontalGroup(
@@ -143,9 +137,7 @@ public class design extends javax.swing.JFrame {
                             .addGroup(panelLayout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addGap(18, 18, 18)
-                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(insertParams)
-                                    .addComponent(e)))))
+                                .addComponent(e))))
                     .addGroup(panelLayout.createSequentialGroup()
                         .addGap(107, 107, 107)
                         .addComponent(jLabel3)))
@@ -158,13 +150,8 @@ public class design extends javax.swing.JFrame {
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(f, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabel3))
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(insertParams)))
+                .addGap(33, 33, 33)
+                .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -184,7 +171,9 @@ public class design extends javax.swing.JFrame {
                 .addGap(40, 40, 40))
         );
 
-        calculate.setBackground(new java.awt.Color(153, 153, 255));
+        calculate.setBackground(new java.awt.Color(0, 51, 153));
+        calculate.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        calculate.setForeground(new java.awt.Color(255, 255, 255));
         calculate.setText("Подсчитывать");
         calculate.setToolTipText("");
         calculate.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 204), new java.awt.Color(204, 0, 0), new java.awt.Color(102, 0, 0), new java.awt.Color(255, 102, 102)));
@@ -195,6 +184,8 @@ public class design extends javax.swing.JFrame {
         });
 
         jButton1.setBackground(new java.awt.Color(255, 153, 153));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Выход");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -203,10 +194,22 @@ public class design extends javax.swing.JFrame {
         });
 
         cleaner.setBackground(new java.awt.Color(255, 204, 0));
+        cleaner.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        cleaner.setForeground(new java.awt.Color(255, 255, 255));
         cleaner.setText("Очищать поля");
         cleaner.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cleanerActionPerformed(evt);
+            }
+        });
+
+        insertParams.setBackground(new java.awt.Color(51, 0, 153));
+        insertParams.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        insertParams.setForeground(new java.awt.Color(255, 255, 255));
+        insertParams.setText("Обновить график");
+        insertParams.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                insertParamsActionPerformed(evt);
             }
         });
 
@@ -224,12 +227,14 @@ public class design extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(calculate, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(45, 45, 45)
-                                .addComponent(cleaner, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(417, Short.MAX_VALUE))
+                                .addComponent(calculate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(cleaner, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(insertParams)))
+                .addContainerGap(341, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,11 +247,13 @@ public class design extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(calculate, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cleaner, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cleaner, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(insertParams, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(55, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void calculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateActionPerformed
@@ -280,7 +287,7 @@ public class design extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void insertParamsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertParamsActionPerformed
-        // TODO add your handling code here:
+//         TODO add your handling code here:
         panel.setEnabled(true);
         jLabel1.setEnabled(true);
         f.setEnabled(true);
