@@ -250,8 +250,14 @@
         </Component>
         <Component class="javax.swing.JButton" name="calculate">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="99" red="0" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&#x41f;&#x43e;&#x434;&#x441;&#x447;&#x438;&#x442;&#x44b;&#x432;&#x430;&#x442;&#x44c;"/>
           </Properties>
@@ -260,14 +266,20 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="80" y="670" width="-1" height="-1"/>
+              <AbsoluteConstraints x="80" y="670" width="-1" height="50"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="cleaner">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="99" red="0" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&#x41e;&#x447;&#x438;&#x449;&#x430;&#x442;&#x44c; &#x43f;&#x43e;&#x43b;&#x44f;"/>
           </Properties>
@@ -276,14 +288,20 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="300" y="670" width="-1" height="-1"/>
+              <AbsoluteConstraints x="300" y="670" width="-1" height="50"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="exit">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&#x412;&#x44b;&#x445;&#x43e;&#x434;"/>
           </Properties>
@@ -292,14 +310,20 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="1620" y="810" width="-1" height="-1"/>
+              <AbsoluteConstraints x="1620" y="805" width="-1" height="50"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="insertParams">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="ff" red="33" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&#x41e;&#x431;&#x43d;&#x43e;&#x432;&#x438;&#x442;&#x44c; &#x433;&#x440;&#x430;&#x444;&#x438;&#x43a;"/>
           </Properties>
@@ -308,7 +332,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="1120" y="810" width="-1" height="-1"/>
+              <AbsoluteConstraints x="1120" y="805" width="-1" height="50"/>
             </Constraint>
           </Constraints>
         </Component>

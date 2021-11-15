@@ -5,6 +5,9 @@
  */
 package course.work;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Appledore
@@ -29,14 +32,6 @@ public class help extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -45,45 +40,16 @@ public class help extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Constantia", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("jLabel1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
-
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, -1, -1));
-
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("jLabel3");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, -1, -1));
-
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("jLabel4");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, -1, -1));
-
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("jLabel5");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, -1, -1));
-
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("jLabel6");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
-
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("jLabel7");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, -1, -1));
-
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("jLabel8");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
-
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("jLabel9");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 390, -1, -1));
+        jLabel1.setText("<html>Эта программа используется для построения графика функции.\nВ этом окне у нас есть 3 входных параметра: один вход для функции и 2 других для интервала функции. И у нас есть корневой вывод, который выводит корень нашей функции. Два других показывают ошибку и максимальный интервал. Справа мы видим график нашей функции. Он был нарисован в Plot2DPanel. Для расчета всего этого я использовал 3 класса Java: метод, реализацию и функцию. Мы передаем входные параметры методу, который вычисляет шаг нашего интервала и возвращает его с шагом 0,1 массива. Класс функции преобразует нашу строковую функцию в читаемую переменную и записывает в переменную x. Реализация класса вычисляет корень нашей функции и возвращает ее как строку. И в Plot2DPanel будет нарисована вся наша функция.</html>");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 810, 420));
 
         jButton1.setBackground(new java.awt.Color(0, 51, 102));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("jButton1");
+        jButton1.setText("Назад");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -91,9 +57,10 @@ public class help extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(794, 709, 170, 50));
 
+        jLabel11.setFont(new java.awt.Font("Cambria", 3, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("jLabel11");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, -1, -1));
+        jLabel11.setText("Коротко о программе");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, 280, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/course/work/Untitled-2.png"))); // NOI18N
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
@@ -158,14 +125,6 @@ public class help extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
