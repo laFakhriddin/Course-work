@@ -121,41 +121,49 @@ public class graphic extends javax.swing.JFrame {
         root.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         jPanel1.add(root, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 490, 280, -1));
 
+        calculate.setBackground(new java.awt.Color(0, 153, 255));
         calculate.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        calculate.setForeground(new java.awt.Color(255, 255, 255));
         calculate.setText("Подсчитывать");
         calculate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calculateActionPerformed(evt);
             }
         });
-        jPanel1.add(calculate, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 670, -1, -1));
+        jPanel1.add(calculate, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 670, -1, 50));
 
+        cleaner.setBackground(new java.awt.Color(0, 153, 255));
         cleaner.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        cleaner.setForeground(new java.awt.Color(255, 255, 255));
         cleaner.setText("Очищать поля");
         cleaner.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cleanerActionPerformed(evt);
             }
         });
-        jPanel1.add(cleaner, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 670, -1, -1));
+        jPanel1.add(cleaner, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 670, -1, 50));
 
+        exit.setBackground(new java.awt.Color(255, 0, 0));
         exit.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        exit.setForeground(new java.awt.Color(255, 255, 255));
         exit.setText("Выход");
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exitActionPerformed(evt);
             }
         });
-        jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1620, 810, -1, -1));
+        jPanel1.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1620, 805, -1, 50));
 
+        insertParams.setBackground(new java.awt.Color(51, 255, 51));
         insertParams.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        insertParams.setForeground(new java.awt.Color(255, 255, 255));
         insertParams.setText("Обновить график");
         insertParams.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 insertParamsActionPerformed(evt);
             }
         });
-        jPanel1.add(insertParams, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 810, -1, -1));
+        jPanel1.add(insertParams, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 805, -1, 50));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/course/work/Untitled.png"))); // NOI18N
         jLabel9.setText("jLabel9");
